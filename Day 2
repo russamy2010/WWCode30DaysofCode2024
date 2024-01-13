@@ -1,0 +1,8 @@
+Python Code challenge Day 2
+Write a function to count the number of vowels in a given string
+def count_vowels(string): 
+  count=0
+  for letter in string: 
+    if letter=="a" or letter=="A" or letter=="e" or letter="E" or letter=="i" or letter"I" or letter=="o" or letter"O" letter=="u" or letter"U" or letter=="y" or letter"Y"
+        count+=1
+  retirm count_vowels
