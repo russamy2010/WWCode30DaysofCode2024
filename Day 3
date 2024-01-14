@@ -47,6 +47,7 @@ while x < 10:
     product = product * x
     x = x + 1
 print(sum, product)
+#Output 45, 10-->this is correct
 
 #In the IDLE
 def sum():
