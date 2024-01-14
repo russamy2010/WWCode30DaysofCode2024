@@ -1,0 +1,62 @@
+#Day 3 Challenge focused on fixing code when the items are not intialized
+
+#Code Fix #1
+#Original Code
+def count_down(start_number):
+  while (current > 0):
+    print(current)
+    current -= 1
+  print("Zero!")
+
+count_down(3)
+
+#Fixed Code 
+def count_down(start_number):
+  current = 3
+  while (current > 0):
+    print(current)
+    current -= 1
+  print("Zero!")
+
+count_down(3)
+
+
+#Code Fix #2
+#Original Code
+x = 1
+sum = 0
+while x < 10:
+	sum = sum + x
+	x = x + 1
+product = 1
+while x < 10:
+    product = product * x
+    x = x + 1
+print(sum, product)
+#Ouput 45 1-->incorrect because x for product has not been defined for the second block, so x=10 for the second block which is false
+
+#Correct Code
+x = 1
+sum = 0
+while x < 10:
+	sum = sum + x
+	x = x + 1
+product = x
+while x < 10:
+    product = product * x
+    x = x + 1
+print(sum, product)
+
+#In the IDLE
+def sum():
+    x = 1
+    sum = 0
+    while x < 10:
+        sum = sum + x
+        x = x + 1
+        def product():
+            product = x
+            while x < 10:
+                product = product * x
+                x = x + 1
+    print(sum, product)
