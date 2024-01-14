@@ -62,3 +62,23 @@ def sum():
                 product = product * x
                 x = x + 1
     print(sum, product)
+
+#Code Fix #3
+#Original Code
+def print_range(start, end): 
+    #loop through the numbers from start to end
+    n = start
+    while n <=end: 
+        print (n)
+
+print_range (1,5) 
+#Output should be 1 2 3 4 5 each number on its own line
+
+#Correct Code
+def print_range(start, end): 
+    #loop through the numbers from start to end
+    n = start
+    while n <=end: 
+        print (n)
+        n=n+1 #or n+=1# #Without incrementing through n, this will always be true-->must remember to increment through an iterative
+print_range (1,5) 
