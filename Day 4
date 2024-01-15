@@ -97,4 +97,31 @@ def is_power_of(number, base):
 
 print(is_power_of(8,2))     # Should be True
 print(is_power_of(64,4))    # Should be True
-print(is_power_of(70,10))   # Should be False#
+print(is_power_of(70,10))   # Should be False
+
+#Code Creation
+#Create a function should count down from the “start” to “stop” 
+#variables when “start” is bigger than “stop”. Otherwise, it should count up from “start” to “stop”. 
+
+def counter(start, stop):
+    return_string = "" #Need to declare the variable
+    if start > stop:
+        return_string = "Counting down: "
+        while start >= stop: # Complete the while loop
+            return_string += str(start) # Add the numbers to the "return_string" ->make the numbers a string
+            if start > stop:
+                return_string += ","
+            start -= 1 # Decrement the appropriate variable
+    else:
+        return_string = "Counting up: "
+        while start <= stop: # Complete the while loop
+            return_string += str(start) # Add the numbers to the "return_string"->make the numbers a string
+            if start < stop:
+                return_string += ","
+            start += 1  # Increment the appropriate variable
+    return return_string
+
+
+print(counter(1, 10)) # Should be "Counting up: 1,2,3,4,5,6,7,8,9,10"
+print(counter(2, 1)) # Should be "Counting down: 2,1"
+print(counter(5, 5)) # Should be "Counting up: 5"
