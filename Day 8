@@ -1,0 +1,14 @@
+#Code Challenge
+#Write a program to check if a number is even or odd.
+
+def get_number():
+    if get_number >= 0:
+        print("Positive")
+    else:
+        print("Negative")
+
+#Print the result
+number=int(input("Enter number:"))
+print (get_number)
+
+    
