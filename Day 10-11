@@ -1,0 +1,10 @@
+#Day 10: Attended Python for Beginners Course 
+#Day 11: Write a program to print the multiplication table of a given number.
+
+#Define the variable 'number'
+number=int(input("Enter an integer: "))
+
+#Write the for loop that takes the number variable 
+#and multiples it through a range demonstrated common muliplication tables, including 13
+for i in range (0,14):
+    print(f"{number} x {i} = {number*i}")
