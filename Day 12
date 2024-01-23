@@ -1,1 +1,11 @@
 #Write a program to shuffle the elements of a list randomly.
+
+#Import the shuffle function from random
+from random import shuffle
+
+#Generate input for user to create a list
+my_list=int(input("Enter a list:[] "))
+
+#Shuffle and print the list
+shuffle(my_list)
+print(my_list)
