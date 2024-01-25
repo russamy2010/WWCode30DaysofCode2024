@@ -1,0 +1,30 @@
+#Worked on Data Pottery Project--created first dataframe and used Faker for Fun in Colab
+
+#install needed librarys and faker
+!pip install faker
+import pandas as pd
+import numpy as np
+import matplotlib as mp
+import seaborn as sb
+
+#import Faker, create a generator instance
+from faker import Faker
+
+pottery_work=Faker()
+
+#define the attributes
+attributes=("BODY","CREATOR","METHOD", "SEASON", "GLAZE", "STAIN", "REPAIR", "SUCCESS")
+
+
+#generate data and create a list of dictionairies
+data = []
+for pottery_work in range(10000):
+    record = {attr: str(pottery_work).format(attr) for attr in list(attributes)}
+    data.append(record)
+
+#convert to a pd dataframe
+df_pottery=pd.DataFrame(data)
+
+
+#display the dataframe
+display(df_pottery)
