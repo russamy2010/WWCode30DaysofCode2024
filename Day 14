@@ -1,0 +1,10 @@
+#Write a program that to print the first n numbers of a Fibonacci sequence
+
+def fibonacci(n):
+    a,b=0,1 #initialize the first two numbers in the sequence
+    for i in range(n):
+        print(a,end="") #Print the current number
+        a,b=b,a+b #Update a and b for the next number
+
+#Note: Fibonacci sequence is the series of numbers where each number 
+        #is the sum of the two preceding numbers-->had to look it up
