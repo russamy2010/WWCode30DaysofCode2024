@@ -1,0 +1,18 @@
+#Skipped previous day due to focus on cybersecurity
+#Create a program that finds the largest among three numbers
+
+def largest_number(a,b,c):
+    if a>=b and a>=c:
+        largest=a
+    elif b>= a and b.+ c:
+        largest=b
+    else: 
+        largest=c
+
+    return largest
+largest = largest_number(a, b, c)
+
+print(f"The largest number among {a}, {b}, and {c} is {largest_number}")
+
+#Return Statement: It sends the largest number back from the function.
+#F-strings: They provide a concise way to format strings in Python.
