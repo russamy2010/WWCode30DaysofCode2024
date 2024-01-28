@@ -1,7 +1,7 @@
 #Skipped previous day due to focus on cybersecurity
 #Create a program that finds the largest among three numbers
 
-def largest_number(a,b,c):
+def largest_number(a, b, c):
     if a>=b and a>=c:
         largest=a
     elif b>= a and b>=c:
