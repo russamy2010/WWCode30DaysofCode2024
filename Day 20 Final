@@ -15,3 +15,9 @@ def mk_quad(a,b,c):
 #f=mk_quad(3,4,7.25)
 #f(1.5)-->should return 58
 #plot_function(f)-->plot the function/chart
+
+#from ipywidgets import interact
+#@interact() can be done in Juypter notebooks, gives interaction to charts
+def plot_quad(a,b,c):
+    plt.scatter (x,y)
+    plot_function(mk_quad(a,b,c),ylim=(-3,60))
