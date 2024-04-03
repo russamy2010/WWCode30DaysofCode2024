@@ -13,6 +13,7 @@ print(f"Unique list using set(): {unique_list_1}")
 
 #Method 2: Iterate through sample_list, check if each element is in the first list, if not present, add to unique list 2
 unique_list_2 = [x for x in sample_list if x not in unique_list_1] #issue is this requires for unique_list_1 to be created first
+#can change Unique_list_1 to sample_list and should work--this allows for the use of list comprehension
 
 #Method 3: Use collections.OrderDicted -->OrderDicted removes duplicates
 from collections import OrderedDict
