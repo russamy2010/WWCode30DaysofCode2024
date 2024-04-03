@@ -5,7 +5,7 @@ def quad(a,b,c,x):
 #Output
 #quad(3,4,7.25, 3.5)-->should return 58
 
-#use partial application of a function to build something that creates a lot of quadratics functionns
+#use partial application of a function to build something that creates a lot of quadratics functions
 
 from functools import partial #-->allows you to fix the values of the function by passing the parameters and the fixed variables
 def mk_quad(a,b,c):
@@ -13,7 +13,7 @@ def mk_quad(a,b,c):
 
 #Output
 #f=mk_quad(3,4,7.25)
-#f(1.5)-->should return 58
+#f(3.5)-->should return 58
 #plot_function(f)-->plot the function/chart
 
 #from ipywidgets import interact
